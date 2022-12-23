@@ -29,9 +29,9 @@ class Product extends Model
                 if ($product){
                     self::$imageUrl = $product->image;
                 }
-//                else{
-//                    self::$imageUrl = null;
-//                }
+            else{
+                self::$imageUrl = null;
+            }
         }
         return self::$imageUrl;
     }
